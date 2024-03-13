@@ -55,7 +55,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000")
         .await
-        .expect("Could not initializze TcpListener");
+        .expect("Could not initialize TcpListener");
 
     tracing::debug!(
         "listening on {}",
